@@ -1,0 +1,73 @@
+.data {
+  height: 60vh;
+  margin: 16px 0;
+  overflow-y: scroll;
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgba(198, 209, 221, 0.5);
+  word-wrap: break-word;
+}
+
+.data__titles {
+  font-weight: 500;
+  font-size: 12px;
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+}
+
+.data__title {
+  padding: 12px 16px;
+  text-align: center;
+  color: #7b8395;
+  background: rgba(240, 242, 244);
+  box-shadow: inset -1px -1px 0px rgb(198 209 221 / 50%);
+}
+
+.data__car {
+  margin-top: 30px;
+  font-size: 12px;
+  width: 100%;
+  background: #ffffff;
+  font-size: 13px;
+  padding: 12px 16px;
+  color: #1f232e;
+  text-align: center;
+}
+
+tbody {
+  display: block;
+  position: relative;
+  top: 39px;
+}
+
+thead {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+td {
+  box-shadow: inset -1px -1px 0px rgba(198, 209, 221, 0.5);
+  width: 138px;
+  box-sizing: border-box;
+}
+
+th {
+  width: 138px;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
+
+thead th.ascending::after {
+  content: "👇";
+  display: inline-block;
+  margin-left: 1em;
+}
+
+thead th.descending::after {
+  content: "☝️";
+  display: inline-block;
+  margin-left: 1em;
+}

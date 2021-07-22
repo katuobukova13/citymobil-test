@@ -1,0 +1,38 @@
+aside {
+  background: #e4e5e6;
+  mix-blend-mode: normal;
+  box-shadow: inset 0px -1px 0px rgba(150, 150, 150, 0.25);
+  font-size: 36px;
+  line-height: 44px;
+  color: #707070;
+}
+
+main {
+  height: 80vh;
+}
+
+.table {
+  margin: 32px 40px;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+}
+
+.search__input {
+  flex-grow: 4;
+}
+
+.search__button {
+  flex-grow: 1;
+}
+
+.search__select {
+  background: rgba(240, 242, 244, 0.5);
+  border: 1px solid #dee5eb;
+  box-shadow: inset -1px 0px 0px rgba(198, 209, 221, 0.5);
+  height: 25px;
+  line-height: 24px;
+  padding-left: 5px;
+}

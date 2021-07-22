@@ -1,0 +1,10 @@
+.header {
+  height: 10vh;
+  background: #f2f3f4;
+}
+.header__text {
+  font-size: 36px;
+  line-height: 44px;
+  color: #707070;
+  text-align: center;
+}
