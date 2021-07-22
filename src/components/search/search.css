@@ -1,0 +1,76 @@
+.search__form {
+  display: flex;
+}
+
+.search__input {
+  flex-grow: 5;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-image: url("../../icons/loupe.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.search__button {
+  flex-grow: 1;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #7b8395;
+  color: white;
+  border: 2px solid #7b8395;
+}
+.search__button:hover {
+  background-color: white;
+  color: #7b8395;
+}
+
+@media (max-width: 1024px) {
+  .search__input {
+    flex: 550px 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .search__input {
+    flex: 350px 1;
+  }
+}
+
+@media (max-width: 425px) {
+  .search__form {
+    flex-direction: column;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .search__input {
+    width: 250px;
+    background-image: none;
+    padding: 5px;
+  }
+  .search__button {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 375px) {
+  .search__input {
+    width: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .search__input {
+    width: 170px;
+  }
+  .search__button {
+    margin-left: 0;
+    margin-top: 5px;
+    width: 80px;
+  }
+}

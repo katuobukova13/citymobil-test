@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Table from "../table/Table";
 import Search from "../search/Search";
@@ -20,9 +20,7 @@ function Main() {
     setLoading(true);
     try {
       await axios.get("https://city-mobil.ru/api/cars").then((data) => {
-        /*         console.log(data.data.tariffs_list); */
         setTariffs(data.data.tariffs_list);
-        /*         console.log(JSON.stringify(data.data.cars, null, "  ")); */
         setData(data.data.cars);
       });
       setLoading(false);
@@ -45,7 +43,7 @@ function Main() {
             checkedCar={checkedCar}
           />
         )}
-        <div className="search__select">{checked}</div>
+        <div className="select">{checked}</div>
       </div>
     </main>
   );
